@@ -538,6 +538,7 @@ GameObject:
   - component: {fileID: 95115456}
   - component: {fileID: 95115455}
   - component: {fileID: 95115454}
+  - component: {fileID: 95115457}
   m_Layer: 0
   m_Name: "\u50B3\u9001\u9580"
   m_TagString: Untagged
@@ -1243,7 +1244,7 @@ ParticleSystem:
     radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: -90, y: 0, z: 0}
     m_Scale: {x: 2, y: 1, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
@@ -5274,13 +5275,39 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 95115453}
-  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 4.5199585, y: -1.79, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.68, y: 2.02, z: 0}
   m_LocalScale: {x: 0.860215, y: 0.8002003, z: 0.8002003}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &95115457
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95115453}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0000001937151, y: 0.24842939}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.32544538, y: 0.5031412}
+  m_EdgeRadius: 0
 --- !u!1 &151765872
 GameObject:
   m_ObjectHideFlags: 0
@@ -12358,6 +12385,7 @@ GameObject:
   - component: {fileID: 1072229582}
   - component: {fileID: 1072229586}
   - component: {fileID: 1072229585}
+  - component: {fileID: 1072229587}
   m_Layer: 0
   m_Name: "\u5973\u5B69"
   m_TagString: Untagged
@@ -12485,6 +12513,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1072229587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072229581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d98ca21557ed1e4380c97d6054f9084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  final: {fileID: 1117855954}
 --- !u!1 &1098096924
 GameObject:
   m_ObjectHideFlags: 0
@@ -13743,7 +13784,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: GAME OVER
+  m_Text: LEVEL PASS!
 --- !u!222 &1461391591
 CanvasRenderer:
   m_ObjectHideFlags: 0
